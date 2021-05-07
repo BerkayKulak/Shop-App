@@ -12,6 +12,7 @@ import { ShopModule } from './shop/shop.module';
     BrowserModule,
     ShopModule
   ],
+  //
   providers: [],
   bootstrap: [AppComponent]
 })
