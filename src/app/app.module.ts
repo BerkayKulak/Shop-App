@@ -5,15 +5,13 @@ import { AppComponent } from './app.component';
 import { ShopModule } from './shop/shop.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    ShopModule
+    ShopModule, //
   ],
   //
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
