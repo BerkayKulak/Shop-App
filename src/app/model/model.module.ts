@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RestService } from './rest.service';
 import { ProductRepository } from './product.repository';
-import { Category } from './category.model';
 import { CategoryRepository } from './category.repository';
+import { Cart } from './card.model';
+import { OrderRepository } from './order.repository';
+import { Order } from './order.model';
 
 @NgModule({
   imports: [HttpClientModule],
-  providers:[RestService,ProductRepository,CategoryRepository]
+  providers: [RestService, ProductRepository, CategoryRepository,Cart,Order,OrderRepository],
 })
 export class ModelModule {}

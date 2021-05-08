@@ -8,18 +8,17 @@ export class CategoryRepository implements OnInit {
 
   constructor(private restService: RestService) {
     this.restService
-    .getCategories()
-    .subscribe((categories) => (this.categories = categories));
+      .getCategories()
+      .subscribe((categories) => (this.categories = categories));
   }
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 
   getCategory(id: number): Category {
     return this.categories.find((i) => i.id === id);
   }
-  getCategories():Category[]{
+
+  getCategories(): Category[] {
     return this.categories;
   }
 }
